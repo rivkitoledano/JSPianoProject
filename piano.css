@@ -1,0 +1,177 @@
+body{
+  background-image: url("תמונות/רקע-שחור.jpg");
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(9, 27, 36);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottoms{
+  background-color: rgb(0, 0, 0);
+  margin-top: 2%;
+  width: 100%;
+  padding-bottom:2%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.piano{
+  display: flex;
+  box-shadow: 5px 7px rgb(11, 15, 15);
+}
+.key {
+height: calc(var(--width) * 2);
+width: var(--width);
+}
+.white{
+  width: 120px;
+  height: 360px;
+  background-color: white;
+  border: 1px solid #000000;
+  position: relative;
+  margin-right: 1.01px;
+}
+
+.black{
+  width: 60px;
+  height: 210px;
+  background-color: black;
+  border-radius: 3px;
+  margin-left: -30px;
+  margin-right: -30px;
+  z-index: 2;
+  position: relative
+
+}
+.assists{
+  position: absolute;
+  bottom: 3px;
+  right: 50%;
+  font-size: larger;
+  font-weight: bold;
+
+}
+
+.b{
+color: white;
+}
+.piano-title{
+color: #70b6e9;
+margin-top: 3%;
+font-size: 40px;
+font-weight: bolder;
+}
+.button{
+  width: 7%;
+  height: 50px;
+  background-color:#70b6e9;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin-top: 2.5%;
+}
+.sheet_div{
+  width: 50%;
+ display: flex;
+ height: 150px;
+ position: relative;
+}
+.music_sheet{
+  width: 50%;
+  border-radius: 12px;
+}
+.stage{
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 12px;
+
+
+}
+
+.selectSong{
+  color: black;
+ width: 100%;
+ font-size: larger;
+ margin-bottom: 5%;
+ border-radius: 12px;
+
+}
+
+.Sheet{
+ position: absolute;
+ top :80px;
+ color: #70b6e9;
+ width: 100%;
+ border: 1px solid rgb(255, 255, 255);
+ height: 80px;
+ font-size: larger;
+ padding: 3%;
+ border-radius: 15px;
+}
+.playselect{
+  border-radius: 12px;
+  margin-left: 2px;  
+  font-size: medium;
+  width: 10%;
+}
+.key.active {
+  background-color:#b5cbda;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  margin-top: 5px;
+}
+.error{
+  background-color: red;
+}
+#see_date{
+  color: white;
+  position: fixed;
+  left: 8px;
+  top:7px
+}
+@media only screen and (max-width: 2000px) {
+  .sheet_div{
+    height:200px;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .sheet_div{
+    height:150px;
+  }
+  .white{
+    width: 100px;
+    height: 320px;
+  }
+  .black{
+    width: 50px;
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+
+  .white{
+    width: 90px;
+    height:288px;
+  }
+  .black{
+    width: 40px;
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+
+  .white{
+    width: 80px;
+    height:256px;
+  }
+  .black{
+    width: 30px;
+    height: 108px;
+  }
+}

@@ -1,0 +1,833 @@
+# Source code from: C:\Users\user1\Documents\לימודים שנה א\Java skript\פרויקט רספונסיבי
+
+#this Source code from: C:\Users\user1\Documents\לימודים שנה א\Java skript\פרויקט רספונסיבי\piano.css
+
+body{
+  background-image: url("תמונות/רקע-שחור.jpg");
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(9, 27, 36);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottoms{
+  background-color: rgb(0, 0, 0);
+  margin-top: 2%;
+  width: 100%;
+  padding-bottom:2%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.piano{
+  display: flex;
+  box-shadow: 5px 7px rgb(11, 15, 15);
+}
+.key {
+height: calc(var(--width) * 2);
+width: var(--width);
+}
+.white{
+  width: 120px;
+  height: 360px;
+  background-color: white;
+  border: 1px solid #000000;
+  position: relative;
+  margin-right: 1.01px;
+}
+
+.black{
+  width: 60px;
+  height: 210px;
+  background-color: black;
+  border-radius: 3px;
+  margin-left: -30px;
+  margin-right: -30px;
+  z-index: 2;
+  position: relative
+
+}
+.assists{
+  position: absolute;
+  bottom: 3px;
+  right: 50%;
+  font-size: larger;
+  font-weight: bold;
+
+}
+
+.b{
+color: white;
+}
+.piano-title{
+color: #70b6e9;
+margin-top: 3%;
+font-size: 40px;
+font-weight: bolder;
+}
+.button{
+  width: 7%;
+  height: 50px;
+  background-color:#70b6e9;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin-top: 2.5%;
+}
+.sheet_div{
+  width: 50%;
+ display: flex;
+ height: 150px;
+ position: relative;
+}
+.music_sheet{
+  width: 50%;
+  border-radius: 12px;
+}
+.stage{
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 12px;
+
+
+}
+
+.selectSong{
+  color: black;
+ width: 100%;
+ font-size: larger;
+ margin-bottom: 5%;
+ border-radius: 12px;
+
+}
+
+.Sheet{
+ position: absolute;
+ top :80px;
+ color: #70b6e9;
+ width: 100%;
+ border: 1px solid rgb(255, 255, 255);
+ height: 80px;
+ font-size: larger;
+ padding: 3%;
+ border-radius: 15px;
+}
+.playselect{
+  border-radius: 12px;
+  margin-left: 2px;  
+  font-size: medium;
+  width: 10%;
+}
+.key.active {
+  background-color:#b5cbda;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  margin-top: 5px;
+}
+.error{
+  background-color: red;
+}
+#see_date{
+  color: white;
+  position: fixed;
+  left: 8px;
+  top:7px
+}
+@media only screen and (max-width: 2000px) {
+  .sheet_div{
+    height:200px;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .sheet_div{
+    height:150px;
+  }
+  .white{
+    width: 100px;
+    height: 320px;
+  }
+  .black{
+    width: 50px;
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+
+  .white{
+    width: 90px;
+    height:288px;
+  }
+  .black{
+    width: 40px;
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+
+  .white{
+    width: 80px;
+    height:256px;
+  }
+  .black{
+    width: 30px;
+    height: 108px;
+  }
+}
+
+#this Source code from: C:\Users\user1\Documents\לימודים שנה א\Java skript\פרויקט רספונסיבי\logIn\LogIn.css
+
+body{
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../תמונות/יפיפה.jpg");  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#form{
+padding: 12px;
+width: 30%;
+height: 420px;
+text-align: center;
+box-shadow: #014d89 5px 5px 7px;
+margin-left: 8%;
+background-color: rgba(255, 255, 255, 0.374);
+}
+.inpLogIn{
+    border-radius: 6px;
+    padding: 0.8vw;
+    text-align: center;
+    width: 75%;
+    box-shadow: #014d89 3px 3px 3px;
+    border: none;
+}
+.inpLogInbutton{
+    padding: 12px;
+    margin: auto;
+    background-color: #014d89;   
+    width: 78%;
+    border-radius: 6px;
+    box-shadow: #014d89de 5px 5px 3px;
+    border: none;
+}
+.link{
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+#flex{
+    display: flex;
+   margin-top: 50px;
+}
+.son-flex{
+  
+    direction: rtl;
+}
+.information{
+    margin-left: 3%;
+    color: white;
+    font-weight:500;
+    width: 50%;
+}
+.reRequired{
+    color: #014d89;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 15%;
+}
+@media only screen and (max-width: 2000px) {
+    #form{
+        height: 500px;
+        padding: 50px;
+    }
+    .information{
+        font-size: 28px;
+    }
+
+}
+@media only screen and (max-width: 1700px) {
+    #form{
+        height: 400px;
+        padding: 15px;
+    }
+    .information{
+        font-size: large;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    #form{
+        height: 480px;
+        padding: 15px;
+        width: 60%;
+        margin: auto;
+    }
+    #flex{
+        display: block;
+     
+    }
+    .information{
+        width: 80%;
+        display: flex;
+    direction: rtl;
+    font-size: 23px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    color: black;
+    margin: auto
+    }
+    #a3ininfo{
+        text-align: center;
+    }
+
+}
+
+#this Source code from: C:\Users\user1\Documents\לימודים שנה א\Java skript\פרויקט רספונסיבי\piano.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="piano.css">
+    <script src="piano.js" defer></script>
+    <title>Project-Piano</title>
+
+
+</head>
+
+<body>
+    <div id="see_date"></div>
+    <button class="button  music_sheet">open music sheet</button>
+    <div class="sheet_div"></div>
+    <div id="allPiano">
+        <div class="bottoms">
+            <button class="button turn ">Turn On</button>
+            <button class="button key_Assiat">Key Assist</button>
+            <div class="piano-title"> My Piano</div>
+            <button class="button Rec">Rec</button>
+            <button class="button Play">Play</button>
+        </div>
+        <div class="piano">
+            <div data-note="C"  class="key white z"> <span class="assists w">z</span></div>
+            <div data-note="Db" class="key black b"> <span class="assists b">s</span></div>
+            <div data-note="D"  class="key white x"> <span class="assists w">x</span></div>
+            <div data-note="E"  class="key black d"> <span class="assists b">d</span></div>
+            <div data-note="Eb" class="key white c"> <span class="assists w">c</span></div>
+            <div data-note="F"  class="key white v"> <span class="assists w">v</span></div>
+            <div data-note="Gb" class="key black f"> <span class="assists b">f</span></div>
+            <div data-note="G"  class="key white bx"> <span class="assists w">b</span></div>
+            <div data-note="Ab" class="key black g"> <span class="assists b">g</span></div>
+            <div data-note="A"  class="key white n"> <span class="assists w">n</span></div>
+            <div data-note="Bb" class="key black h"> <span class="assists b">h</span></div>
+            <div data-note="B"  class="key white m"> <span class="assists w">m</span></div>
+            <div data-note="C2"  class="key white"> <span class="assists w">e</span></div>
+            <div data-note="Db2" class="key black"> <span class="assists b">4</span></div>
+            <div data-note="D2"  class="key white"> <span class="assists w">r</span></div>
+            <div data-note="E2"  class="key black"> <span class="assists b">5</span></div>
+            <div data-note="Eb2" class="key white"> <span class="assists w">t</span></div>
+            <div data-note="F2"  class="key white"> <span class="assists w">y</span></div>
+            <div data-note="Gb2" class="key black"> <span class="assists b">6</span></div>
+            <div data-note="Gb2"  class="key white"> <span class="assists w">u</span></div>
+            <div data-note="Ab2" class="key black"> <span class="assists b">7</span></div>
+            <div data-note="A2"  class="key white"> <span class="assists w">i</span></div>
+            <div data-note="Bb2" class="key black"> <span class="assists b">8</span></div>
+            <div data-note="B2"  class="key white"> <span class="assists w">o</span></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+#this Source code from: C:\Users\user1\Documents\לימודים שנה א\Java skript\פרויקט רספונסיבי\logIn\LogIn.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LogIn.css">
+    <script src="login.js" defer></script>
+    <title>Log In</title>
+</head>
+
+<body>
+    <div id="flex">
+
+        <div id="form" class="son-flex">
+            <h1>Log In</h1>
+            <form>
+                <label>user name:</label></br></br>
+                <input type="text" class="name inpLogIn"></br></br><div class="reRequired1 reRequired"></div>
+                <label>password:</label></br></br>
+                <input type="number" class="password inpLogIn"></br></br><div class="reRequired2 reRequired"></div></br>
+              <input type="submit"  class="inpLogInbutton link" value="LogIn" > 
+            </form>
+        </div>
+        <div class="son-flex information">
+            <h3 id="a3ininfo">איך לשחק:</h3>
+            <p class="">
+                הפעל את הפסנתר והשתמש בעכבר או במקלדת כדי לנגן בפסנתר.<br>
+                
+                 כאשר אתה רואה אות קטנה, לחץ על האות במקלדת.<br> אתה יכול גם להשתמש בעכבר כדי ללחוץ על מקשי הפסנתר.<br>
+                
+                בגיליון המוזיקה-<br>מוצגים לך את האותיות בשביל היצירה המושלמת שלך <br> 
+                <br>
+                הקלט את השיר שלך על ידי לחיצה על כפתור 
+                "Rec".<br> כשתסיים, לחץ שוב על כפתור "Rec" ולחץ על "Play" כדי להאזין ליצירת המופת שלך.<br>
+                
+                אתה יכול גם להקליד מוזיקה משלך בדף המוזיקה!<br> למרבה הצער, אנחנו לא יכולים לשמור את השירים שאתה יוצר.<br> הקפד לשמור את המוזיקה שלך על ידי העתקה והדבקה של התווים במחשב שלך.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+#this Source code from: C:\Users\user1\Documents\לימודים שנה א\Java skript\פרויקט רספונסיבי\piano.js
+
+const notes = {
+  C: 'sounds/piano-c_C_major.WAV',
+  Db: 'sounds/piano-c_C_major.WAV',
+  D: 'sounds/piano-d_D_major.WAV',
+  E: 'sounds/piano-e_E_major.WAV',
+  Eb: 'sounds/piano-eb_D_major.WAV',
+  F: 'sounds/piano-f_F_major.WAV',
+  Gb: 'sounds/piano-g_GB_major.WAV',
+  G: 'sounds/piano-g_G_major.WAV',
+  Ab: 'sounds/piano-bb_A_major.WAV',
+  A: 'sounds/piano-a_A_major.WAV',
+  Bb: 'sounds/piano-c_C_major.WAV',
+  B: 'sounds/piano-b_B_major.WAV',
+  C2: 'sounds/piano-c_C_major.WAV',
+  Db2: 'sounds/piano-c_C_major.WAV',
+  D2: 'sounds/piano-d_D_major.WAV',
+  E2: 'sounds/piano-e_E_major.WAV',
+  Eb2: 'sounds/piano-eb_D_major.WAV',
+  F2: 'sounds/piano-f_F_major.WAV',
+  Gb2: 'sounds/piano-g_GB_major.WAV',
+  G2: 'sounds/piano-g_G_major.WAV',
+  Ab2: 'sounds/piano-bb_A_major.WAV',
+  A2: 'sounds/piano-a_A_major.WAV',
+  Bb2: 'sounds/piano-c_C_major.WAV',
+  B2: 'sounds/piano-b_B_major.WAV',
+};
+
+function Song(nameSong, NoteOfASong) {
+  this.nameSong = nameSong;
+  this.NoteOfASong = NoteOfASong
+}
+const start1 = new Song("adele-dark", 'c c d c ');
+const start2 = new Song("stan", 'r e c w u 4 8 ');
+const start = new Song("choose your song", '');
+const NotesOfASongS = [start, start1, start2]
+
+const advanced1 = new Song("wedding",'z x c | c | c v c x z x c v c x z c ');
+const advanced2 = new Song("so_lo", 'z x c v b n m ');
+const advanced = new Song("choose your song", '');
+const NotesOfASongA = [advanced, advanced1, advanced2]
+
+const white_key = ['z', 'x', 'c', 'v', 'b', 'n', 'm', 'e', 'r', 't', 'y', 'u', 'i', 'o'];
+const black_key = ['s', 'd', 'f', 'g', 'h', '4', '5', '6', '7', '8'];
+let boolIsTurnOn = 0;
+let boolIKeyAssist = 0;
+let arrKeysLetter;
+let bottomsInMusicSheet;
+let DivBottomsInMusicSheet;
+let boolIsOpenMusicSheet1
+let boolIsOpenMusicSheet2
+let boolIsOpenMusicSheet3
+let boolchange = 0
+let indexOfBlack, indexOfWhite
+let buttonStarters;
+let txt,fast=200
+let boolIsOpen = 0, isRecording = 0
+let arrRec = []
+let playNextNote
+let lastDate, today = new Date(), dates = [];
+let year = today.getFullYear();
+let month = today.getMonth() + 1;
+let day = today.getDate();
+let saveNmes = JSON.parse(localStorage.getItem("Names"));
+let savePassword = JSON.parse(localStorage.getItem("Passwords"));
+dates = JSON.parse(localStorage.getItem("datim"));
+let isExsist = false;
+const name = localStorage.getItem("Name");
+const password = localStorage.getItem("Pass")
+// איזור הקוד שמטפל בהפעלת צלילים עבור כל קליד
+
+const pianoKeys = document.querySelectorAll('.key');
+const whiteKeys = document.querySelectorAll('.key.white');
+const blackKeys = document.querySelectorAll('.key.black');
+
+document.addEventListener('keydown', e => {
+
+  indexOfWhite = white_key.indexOf(e.key)
+  indexOfBlack = black_key.indexOf(e.key)
+
+  if (indexOfBlack > -1 && boolIsTurnOn == 1)
+    playSound(blackKeys[indexOfBlack]);
+
+
+  if (indexOfWhite > -1 && boolIsTurnOn == 1)
+    playSound(whiteKeys[indexOfWhite]);
+
+})
+pianoKeys.forEach(key => {
+  key.addEventListener('click', () => {
+    if (boolIsTurnOn == 1) playSound(key);
+  });
+});
+
+// פונקציה שמשמשת לנגן צליל
+function playSound(key) {
+  const note = key.dataset.note;
+  console.log()
+  const sound = new Audio(notes[note]);
+  sound.currentTime = 0;
+  if (isRecording == 1) {
+    arrRec.push(note);
+  }
+  sound.play();
+  //תאורה בעת לחיצה
+  key.classList.add('active');
+  setTimeout(() => {
+    key.classList.remove('active');
+  }, 150);
+
+}
+
+//מטפל בהקלטה  
+document.querySelector(".Rec").addEventListener("click", Rec);
+function Rec() {
+  isRecording = 1
+  arrRec = []
+
+}
+
+//השמעת ההקלטה
+document.querySelector(".Play").addEventListener('click', Play);
+function Play() {
+  let index = 0;
+  playNextNote = () => {
+    if (index < arrRec.length) {
+      console.log(arrRec[index])
+      const soundFromRecord = new Audio(notes[arrRec[index]]);
+      soundFromRecord.play();
+      index++;
+      setTimeout(playNextNote, 300); // Delay of 1 second (300 milliseconds)
+    }
+  };
+
+  playNextNote();
+}
+//השמעת היצירות מהרשימה
+
+
+//כיבוי או הדלקה של הפסנתר
+document.querySelector(".turn").addEventListener('click', turnUp)
+function turnUp() {
+
+  if (boolIsTurnOn == 0) {
+    boolIsTurnOn = 1
+    document.querySelector(".turn").innerHTML = "Turn Off"
+  }
+  else {
+    boolIsTurnOn = 0
+    document.querySelector(".turn").innerHTML = "Turn On"
+  }
+}
+
+//הופעה של חתימת התוים על הקלידים
+document.querySelector(".key_Assiat").addEventListener('click', Assiat)
+function Assiat() {
+  if (boolIKeyAssist == 0) {
+    boolIKeyAssist = 1;
+    arrKeysLetter = document.querySelectorAll(".assists")
+    arrKeysLetter.forEach(element => {
+      element.style.display = "none"
+    });
+  }
+  else {
+    boolIKeyAssist = 0;
+    arrKeysLetter.forEach(element => {
+      element.style.display = "block"
+    });
+  }
+}
+//פתיחת דף מוזיקה 
+document.querySelector(".music_sheet").addEventListener('click', openSheet)
+
+function openSheet() {
+
+  document.querySelector(".music_sheet").innerHTML = "close music sheet"
+  document.querySelector(".music_sheet").removeEventListener('click', openSheet)
+  document.querySelector(".music_sheet").addEventListener('click', closeSheet)
+
+  bottomsInMusicSheet = document.createElement("button");
+  bottomsInMusicSheet.setAttribute("class", "advanced");
+  bottomsInMusicSheet.classList.add("button");
+  bottomsInMusicSheet.classList.add("stage");
+  txt = document.createTextNode("for advanced");
+  bottomsInMusicSheet.addEventListener('click', openAdvancedSheet)
+  bottomsInMusicSheet.addEventListener('click', createButtomPlay)
+  bottomsInMusicSheet.appendChild(txt);
+  document.querySelector(".sheet_div").appendChild(bottomsInMusicSheet);
+
+  bottomsInMusicSheet = document.createElement("button");
+  bottomsInMusicSheet.setAttribute("class", "starters");
+  bottomsInMusicSheet.classList.add("button");
+  bottomsInMusicSheet.classList.add("stage");
+  bottomsInMusicSheet.addEventListener('click', openStarterSheet)
+   bottomsInMusicSheet.addEventListener('click', createButtomPlay)
+  txt = document.createTextNode("for starter");
+  bottomsInMusicSheet.appendChild(txt);
+  document.querySelector(".sheet_div").appendChild(bottomsInMusicSheet);
+}
+function closeSheet() {
+
+  document.querySelector(".music_sheet").innerHTML = "open music sheet"
+  sheetDiv = document.querySelector(".starters");
+  sheetDiv.parentNode.removeChild(sheetDiv);
+  sheetDiv = document.querySelector(".advanced");
+  sheetDiv.parentNode.removeChild(sheetDiv);
+  if (boolIsOpenMusicSheet1 == 0) {
+    sheetDiv = document.querySelector(".selectSong");
+    sheetDiv.parentNode.removeChild(sheetDiv);
+    boolIsOpenMusicSheet1 = 1
+  }
+  if (boolIsOpenMusicSheet2 == 0) {
+    sheetDiv = document.querySelector(".Sheet");
+    sheetDiv.parentNode.removeChild(sheetDiv);
+    boolIsOpenMusicSheet2 = 1
+  }
+  if (boolIsOpenMusicSheet3 == 0) {
+    sheetDiv = document.querySelector(".playselect");
+    sheetDiv.parentNode.removeChild(sheetDiv);
+    boolIsOpenMusicSheet3 = 1
+  }
+  document.querySelector(".music_sheet").removeEventListener('click', closeSheet)
+  document.querySelector(".music_sheet").addEventListener('click', openSheet)
+
+
+}
+//פתיחת רשימת שירים לשלב מתחילים
+function openStarterSheet() {
+
+  const selectElement = document.createElement('select')
+  selectElement.setAttribute("class", "selectSong")
+  selectElement.classList.add("button")
+  for (let i = 0; i < NotesOfASongS.length; i++) {
+    const optionElement = document.createElement('option')
+  optionElement.value = NotesOfASongS[i].NoteOfASong;
+  txt = document.createTextNode(NotesOfASongS[i].nameSong)
+  optionElement.appendChild(txt)
+  selectElement.appendChild(optionElement);
+  }
+  selectElement.addEventListener('change', changeSelected)
+  document.querySelector(".sheet_div").appendChild(selectElement);
+  boolIsOpenMusicSheet1 = 0
+  fast=400
+}
+
+function openAdvancedSheet() {
+
+  const selectElement = document.createElement('select')
+  selectElement.setAttribute("class", "selectSong")
+  selectElement.classList.add("button")
+  for (let i = 0; i < NotesOfASongA.length; i++) {
+    const optionElement = document.createElement('option')
+  optionElement.value = NotesOfASongA[i].NoteOfASong;
+  txt = document.createTextNode(NotesOfASongA[i].nameSong)
+  optionElement.appendChild(txt)
+  selectElement.appendChild(optionElement);
+  }
+  selectElement.addEventListener('change', changeSelected)
+  document.querySelector(".sheet_div").appendChild(selectElement);
+  boolIsOpenMusicSheet1 = 0
+  boolchange=0
+  fast=200
+}
+function createButtomPlay(){
+  let stages = document.querySelectorAll(".stage")
+  stages.forEach(element => {
+    element.style.display = "none"
+  });
+  bottomsInMusicSheet = document.createElement("button");
+  bottomsInMusicSheet.setAttribute("class", "playselect");
+  bottomsInMusicSheet.addEventListener('click', playNote)
+  bottomsInMusicSheet.classList.add("button");
+  txt = document.createTextNode("play");
+  bottomsInMusicSheet.appendChild(txt);
+  document.querySelector(".sheet_div").appendChild(bottomsInMusicSheet);
+  boolIsOpenMusicSheet3 = 0
+  boolchange=0
+}
+
+
+//החלפת שיר 
+function changeSelected() {
+  if (boolchange == 0) {
+    divelement = document.createElement("div")
+    divelement.setAttribute("class", "Sheet")
+    txt = document.createTextNode(this.value);
+
+    divelement.appendChild(txt);
+    document.querySelector(".sheet_div").appendChild(divelement)
+    boolchange = 1;
+  }
+  else
+    document.querySelector('.Sheet').innerHTML = this.value
+  boolIsOpenMusicSheet2 = 0
+  let i = 0;
+  let countTrue = 0;
+  let soundWinOrNot;
+  document.addEventListener('keydown', e => {
+    if (boolIsTurnOn == 1) {
+      if(this.value[i]=='|')
+      {  i+=2
+         countTrue++;
+      }
+      console.log(i+" "+this.value[i]+" "+e.key+" ")
+      console.log(this.value.length/2-2)
+      console.log(countTrue)
+      if (this.value[i] === e.key) {
+        countTrue++;
+        if (this.value.length / 2 == countTrue) {
+          soundWinOrNot = new Audio("sounds/נצחון.mp3");
+          soundWinOrNot.play();
+          countTrue = 0;
+          i = -2
+        }
+      }
+      else
+        if (this.value[i] != e.key&&this.value[i]!=undefined) {
+          soundWinOrNot = new Audio("sounds/negative_beeps-6008.mp3");
+          soundWinOrNot.play();
+          countTrue = 0;
+          i = -2;
+        }
+
+      i += 2;
+    }
+
+  })
+}
+
+
+let index = 0;
+function playNote() {
+
+  console.log(document.querySelector(".Sheet").innerHTML)
+  let thisValue = document.querySelector(".Sheet").innerHTML
+  if (index < thisValue.length) {
+    if(thisValue[index]!='|'){
+    indexOfWhite = white_key.indexOf(thisValue[index]);
+    indexOfBlack = black_key.indexOf(thisValue[index]);
+
+    if (indexOfBlack > -1 && boolIsTurnOn == 1) {
+      playSound(blackKeys[indexOfBlack]);
+    }
+
+    if (indexOfWhite > -1 && boolIsTurnOn == 1) {
+      playSound(whiteKeys[indexOfWhite]);
+    }
+  }
+    index += 2;
+
+    setTimeout(playNote,fast ); // Delay of fast milliseconds (0.3 seconds)
+  }
+  else
+    index = 0
+}
+
+for (let i = 0; i < saveNmes.length; i++) {
+  if (saveNmes[i] == name && password == savePassword[i]) {
+    if (dates[i] != null)
+      document.getElementById("see_date").innerHTML = name + ", last visit " + dates[i]
+    else
+      document.getElementById("see_date").innerHTML = name + ", well come"
+
+    dates[i] = day + "." + month + '.' + year
+    localStorage.setItem("datim", JSON.stringify(dates))
+  }
+}
+
+
+
+#this Source code from: C:\Users\user1\Documents\לימודים שנה א\Java skript\פרויקט רספונסיבי\logIn\login.js
+
+document.querySelector(".name").addEventListener('blur', validName)
+function validName() {
+  if (document.querySelector(".name").value.trim() == '')
+    document.querySelector(".reRequired1").innerHTML = "Required field*"
+}
+document.querySelector(".password").addEventListener('blur', validPassWord)
+function validPassWord() {
+  if (document.querySelector(".password").value.trim() == '')
+    document.querySelector(".reRequired2").innerHTML = "Required field*"
+}
+document.querySelector('#form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  if (validateForm()) {
+    window.location.href = '../piano.html';
+  }
+});
+function validateForm() {
+
+  if (document.querySelector(".name").value.trim() === '' || document.querySelector(".password").value.trim() === '') {
+    validName()
+    validPassWord()
+    return false;
+  }
+  return true;
+}
+document.querySelector(".link").addEventListener('click', () => {
+  //המרת הנתונים למערכים
+  let saveNmes = JSON.parse(localStorage.getItem("Names"));
+  let savePassword = JSON.parse(localStorage.getItem("Passwords"));
+  let dates = JSON.parse(localStorage.getItem("datim"));
+
+  // שומרים את הנתון הנוכחי
+  let currentName = document.querySelector(".name").value;
+  let pass = document.querySelector(".password").value;
+  //בדיקה אם המשתמש קיים
+  let IsExsist = false;
+  if (saveNmes) {
+      for (let index = 0; index < saveNmes.length; index++) {
+          if (saveNmes[index] == currentName && savePassword[index] == pass)
+              IsExsist = true;
+      }
+  }
+  else {
+      saveNmes = [];
+      savePassword = [];
+      dates=[];
+
+  }
+  //אם לא ,דחיפת הנתונים לתוך המערכים
+  if (!IsExsist) {
+  saveNmes.push(currentName);
+  savePassword.push(pass);
+  // המרת כל הנתונים לתוך המישתנים על מנת שנוכל להתעסק איתם ב לוקל...
+  localStorage.setItem("Names", JSON.stringify(saveNmes))
+  localStorage.setItem("Passwords", JSON.stringify(savePassword))
+  localStorage.setItem("datim", JSON.stringify(dates))
+  }
+  //שינוי הנתונים על מנת שנוכל להישתמש בהם אחר כך
+  localStorage.setItem("Name", currentName);
+  localStorage.setItem("Pass", pass);
+
+})
+

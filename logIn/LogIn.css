@@ -1,0 +1,104 @@
+body{
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../תמונות/יפיפה.jpg");  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#form{
+padding: 12px;
+width: 30%;
+height: 420px;
+text-align: center;
+box-shadow: #014d89 5px 5px 7px;
+margin-left: 8%;
+background-color: rgba(255, 255, 255, 0.374);
+}
+.inpLogIn{
+    border-radius: 6px;
+    padding: 0.8vw;
+    text-align: center;
+    width: 75%;
+    box-shadow: #014d89 3px 3px 3px;
+    border: none;
+}
+.inpLogInbutton{
+    padding: 12px;
+    margin: auto;
+    background-color: #014d89;   
+    width: 78%;
+    border-radius: 6px;
+    box-shadow: #014d89de 5px 5px 3px;
+    border: none;
+}
+.link{
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+#flex{
+    display: flex;
+   margin-top: 50px;
+}
+.son-flex{
+  
+    direction: rtl;
+}
+.information{
+    margin-left: 3%;
+    color: white;
+    font-weight:500;
+    width: 50%;
+}
+.reRequired{
+    color: #014d89;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 15%;
+}
+@media only screen and (max-width: 2000px) {
+    #form{
+        height: 500px;
+        padding: 50px;
+    }
+    .information{
+        font-size: 28px;
+    }
+
+}
+@media only screen and (max-width: 1700px) {
+    #form{
+        height: 400px;
+        padding: 15px;
+    }
+    .information{
+        font-size: large;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    #form{
+        height: 480px;
+        padding: 15px;
+        width: 60%;
+        margin: auto;
+    }
+    #flex{
+        display: block;
+     
+    }
+    .information{
+        width: 80%;
+        display: flex;
+    direction: rtl;
+    font-size: 23px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    color: black;
+    margin: auto
+    }
+    #a3ininfo{
+        text-align: center;
+    }
+
+}
